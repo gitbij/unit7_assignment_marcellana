@@ -19,7 +19,7 @@ class _HomeScreenState extends State<HomeScreen> {
     
     if (response.statusCode == 200) {
       final data = jsonDecode(response.body);
-      return data['content']; // assuming the content is in this key
+      return data['content'];
     } else {
       throw Exception("Failed to load Digimon data");
     }
